@@ -3,6 +3,13 @@
   /*font-family: 'Work Sans', sans-serif;*/
 }
 
+.rsvps-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 .navbar, .nav {
   display: flex;
   justify-content: center;

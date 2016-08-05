@@ -77,18 +77,18 @@ function mainController($scope, $http) {
       image: "taylor.jpg"
     },
     {
-      name: "Chelsea",
-      role: "Bridesmaid",
-      image: "chelsea.jpg"
-    },
-    {
       name: "Carl",
       role: "Groomsman",
       image: "carl.jpg"
     },
     {
-      name: "Sara",
+      name: "Chelsea",
       role: "Bridesmaid",
+      image: "chelsea.jpg"
+    },
+    {
+      name: "Sara",
+      role: "Flower Girl",
       image: "sara.jpg"
     },
     {
@@ -97,19 +97,9 @@ function mainController($scope, $http) {
       image: "guy.jpg"
     },
     {
-      name: "Chris",
-      role: "Groomsman",
-      image: "christian.jpg"
-    },
-    {
-      name: "Akshay",
-      role: "Usher",
-      image: "akshay.jpg"
-    },
-    {
-      name: "Brian",
-      role: "Usher",
-      image: "brian.jpg"
+      name: "Riley",
+      role: "Ring Bearer",
+      image: "riley.jpg"
     }
   ];
 }
