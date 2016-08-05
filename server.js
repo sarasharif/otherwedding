@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');    // pull information from HTML POST (
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
 // configuration
-mongoose.connect('mongodb://sarasharif:wedding@jello.modulusmongo.net:27017/m7yqEqob');     // connect to mongoDB database on modulus.io
+mongoose.connect('mongodb://sarasharif:sharifwedding@jello.modulusmongo.net:27017/m7yqEqob');     // connect to mongoDB database on modulus.io
 
 app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 app.use(morgan('dev'));                                         // log every request to the console
