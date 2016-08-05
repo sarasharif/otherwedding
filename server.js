@@ -97,7 +97,7 @@ router.get("/sharif-rsvp-list",function(req,res){
             // get and return all the rsvps after you create another
             Rsvp.find(function(err, rsvps) {
                 if (err)
-                  res.send(err)
+                  res.send(err);
                 res.json(rsvps);
             });
         });

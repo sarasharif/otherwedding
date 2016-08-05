@@ -13,8 +13,9 @@ app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when("/", {templateUrl: "../partials/about.html", controller: "PageCtrl"})
     .when("/details", {templateUrl: "../partials/details.html", controller: "PageCtrl"})
-    .when("/rsvp", {templateUrl: "../partials/rsvp.html", controller: "PageCtrl"})
     .when("/wedding-party", {templateUrl: "../partials/wedding-party.html", controller: "PageCtrl"})
+    .when("/rsvp", {templateUrl: "../partials/rsvp.html", controller: "PageCtrl"})
+    .when("/guest-list", {templateUrl: "../partials/rsvps.html", controller: "PageCtrl"})
     .otherwise("/404", {templateUrl: "../partials/404.html", controller: "PageCtrl"});
 }]);
 

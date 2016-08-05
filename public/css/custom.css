@@ -100,53 +100,18 @@ li > a {
   margin-bottom: 40px;
 }
 
-.carousel-inner {
-  margin: auto;
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.imgcontainer, .imgcontainer.active {
-  height: 450px;
-  /*max-height: 70vh;*/
-  width: auto;
-  margin: auto;
+.photo-gallery * {
+  width: 49vw;
+  height: 30vw;
   overflow: hidden;
-}
-
-.imgcontainer img {
-  height: 450px;
-  max-height: 450px;
-  width: auto;
-  margin: auto;
-}
-
-.imgcontainer.active img {
-  height: 450px;
-  max-height: 450px;
-  width: auto;
-  margin: auto;
-}
-
-.carousel-control.right, .carousel-control.left {
-  background-image: none;
-}
-
-.carousel-caption {
-  /*overflow: visible;*/
-  margin: auto;
-  display: block;
-  white-space: nowrap;
-}
-
-.carousel-caption > h2 {
-  background-color: rgba(0, 0, 0, .5);
-  font-weight: bolder;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-radius: 4px;
-  position: relative;
-  top: 55;
-  left: auto;
-  right: auto;
+  background-size: cover;
+  display: flex;
 }
 
 /*wedding party*/

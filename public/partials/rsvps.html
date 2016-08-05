@@ -1,0 +1,47 @@
+<div ng-app="sharifRsvp">
+  <div class="container" ng-controller="mainController">
+
+  <div class="page-header">
+    <div class="jumbotron">
+      <h1><span class="label label-primary">{{ getTotals().all }}</span> total reservations</h1>
+      <h1><span class="label label-danger">{{ getTotals().friday }}</span> on Friday</h1>
+      <h1><span class="label label-success">{{ getTotals().saturday }}</span> on Saturday</h1>
+    </div>
+  </div>
+
+  <div id="rsvp-list">
+    <div>
+      <table class="table table-hover table-responsive">
+        <tr>
+          <th> </th>
+          <th>name</th>
+          <th>email</th>
+          <th>RSVP</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>#</th>
+          <th>guest(s)</th>
+          <th>V</th>
+          <th>H</th>
+          <th>notes</th>
+        </tr>
+        <tr ng-repeat="rsvp in rsvps">
+          <td>
+            <span class="glyphicon glyphicon-trash" ng-click="deleteRsvp(rsvp._id)"></span>
+          </td>
+          <td>{{ rsvp.name }}</td>
+          <td>{{ rsvp.email }}</td>
+          <td>{{ ((rsvp.attending == "true") && ('YES') || ('NO')) }}</td>
+          <td>{{ rsvp.friday }}</td>
+          <td>{{ rsvp.saturday }}</td>
+          <td>{{ rsvp.number }}</td>
+          <td>{{ rsvp.guest }}</td>
+          <td>{{ rsvp.veg }}</td>
+          <td>{{ rsvp.halal }}</td>
+          <td>{{ rsvp.notes }}</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</div>
