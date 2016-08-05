@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');    // pull information from HTML POST (
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
 // configuration
-mongoose.connect('mongodb://sarasharif:sharifwedding@jello.modulusmongo.net:27017/m7yqEqob');     // connect to mongoDB database on modulus.io
+mongoose.connect('mongodb://Sara:OtherWedding@jello.modulusmongo.net:27017/m7yqEqob');     // connect to mongoDB database on modulus.io
 
 app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 app.use(morgan('dev'));                                         // log every request to the console
@@ -87,21 +87,21 @@ router.get("/sharif-rsvp-list",function(req,res){
     });
 
     // delete a rsvp
-    // app.delete('/api/rsvps/:todo_id', function(req, res) {
-    //     Rsvp.remove({
-    //         _id : req.params.todo_id
-    //     }, function(err, rsvp) {
-    //         if (err)
-    //             res.send(err);
-    //
-    //         // get and return all the rsvps after you create another
-    //         Rsvp.find(function(err, rsvps) {
-    //             if (err)
-    //               res.send(err)
-    //             res.json(rsvps);
-    //         });
-    //     });
-    // });
+    app.delete('/api/rsvps/:todo_id', function(req, res) {
+        Rsvp.remove({
+            _id : req.params.todo_id
+        }, function(err, rsvp) {
+            if (err)
+                res.send(err);
+
+            // get and return all the rsvps after you create another
+            Rsvp.find(function(err, rsvps) {
+                if (err)
+                  res.send(err)
+                res.json(rsvps);
+            });
+        });
+    });
 
 // application -------------------------------------------------------------
 
