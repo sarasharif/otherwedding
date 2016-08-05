@@ -1,0 +1,215 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Work Sans', sans-serif;*/
+}
+
+.navbar, .nav {
+  display: flex;
+  justify-content: center;
+}
+
+/*.nav > li {
+  justify-content: space-around;
+}*/
+
+.nav > li > a {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*line-height: 75px;*/
+  padding: 30px;
+}
+
+.navbar-inverse {
+  opacity: .8;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  background-color: transparent;
+  border-bottom: 4px solid  #99062A;
+}
+
+li > a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  font-size: x-large;
+}
+
+.img-header {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.img-responsive {
+  position: relative;
+  overflow: hidden;
+}
+
+.initials {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 300px;
+  opacity: .7;
+  bottom: 0;
+  color: white;
+  z-index: 10;
+}
+
+
+/*body*/
+
+.jumbotron {
+  margin: 0px;
+  padding: 100px;
+}
+
+.wedding-date {
+  color: #99062A;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 150px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.wedding-hashtag {
+  color: #99062A;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carousel-inner {
+  margin: auto;
+}
+
+.imgcontainer, .imgcontainer.active {
+  height: 450px;
+  /*max-height: 70vh;*/
+  width: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.imgcontainer img {
+  height: 450px;
+  max-height: 450px;
+  width: auto;
+  margin: auto;
+}
+
+.imgcontainer.active img {
+  height: 450px;
+  max-height: 450px;
+  width: auto;
+  margin: auto;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+.carousel-caption {
+  /*overflow: visible;*/
+  margin: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+.carousel-caption > h2 {
+  background-color: rgba(0, 0, 0, .5);
+  font-weight: bolder;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  position: relative;
+  top: 55;
+  left: auto;
+  right: auto;
+}
+
+/*wedding party*/
+.party-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.thumbnail.party-person {
+  height: 25vw;
+  width: 25vw;
+  border-radius: 3000px;
+  margin: 1vw;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail.party-person:hover {
+  box-shadow: inset 200px 200px 300px 200px rgba(40,40,40,.6);
+}
+
+.thumbnail.party-person * {
+  z-index: -10;
+  color: transparent;
+  display: flex;
+  margin: auto;
+}
+
+.thumbnail.party-person:hover * {
+  z-index: 10;
+  color: white;
+}
+
+.jumbotron.details {
+  padding: 40px;
+}
+
+.jumbotron.details > div {
+  text-align: center;
+  border: 1px dotted #999;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.jumbotron.about > div > h2 {
+  text-align: justify;
+}
+
+.jumbotron.details > div > h1 {
+  margin-top: 10px;
+}
+
+.glyphicon {
+  color: #99062A;
+}
+
+span.glyphicon-trash:hover {
+  cursor: pointer;
+}
+
+.form-control.autowidth {
+}
+
+span.from {
+  font-size: 18px;
+}
+
+button.submit {
+  background: #99062A;
+}

@@ -1,0 +1,33 @@
+<html class="no-js">
+  <head>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway|Work+Sans|Quicksand" rel="stylesheet">
+    <link rel='shortcut icon' href='img/kiss.ico' type='image/x-icon'/ >
+    <script src="js/core.js"></script>
+    <title>Marci & Sajid</title>
+  </head>
+
+  <body ng-app="singlePage">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+      your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Our Website Content Goes Here -->
+    <div ng-include='"partials/header.html"'></div>
+    <div ng-view></div>
+
+    <!-- Vendor: Javascripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Vendor: Angular, followed by our custom Javascripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+    <!-- Our Website Javascripts -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
